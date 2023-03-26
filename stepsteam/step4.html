@@ -18,13 +18,7 @@
 <!-- The Main Body -->
 <div class="w3-container w3-content w3-padding-64" style="margin-top:10px">
 <div style="text-align: center;">
-<table style="width: 100%;">
-<tr>
-<td style="text-align: left;"><a href="step3.html" style="text-decoration:none;white-space:nowrap"><h3>&lt; back</h3></a></td>
-<td style="text-align: center;"><h1><span style="color:#73a241;"><b>STEP 4: Data</b></span></h1></td>
-<td style="text-align: right;"><a href="step5.html" style="text-decoration:none;white-space:nowrap"><h3>next &gt;</h3></a></td>
-</tr>
-</table>
+<h1><span style="color:#73a241;"><b>STEP 4: Data</b></span></h1>
 </div>
 
 <h1><span style="color:#73a241;"><b>What</b></span></h1>
@@ -36,8 +30,10 @@
 <p align="justify">Testing the algorithm with various sets of data gives an indication of how profitable the trading robot will be in different market conditions. If the trading robot can profit using different market conditions, it is said to be “robust”. By testing the strategy over various types of data, it can help prove that the strategy is robust. Even as the market changes, the trading robot will still be able to profit. It also stress tests the strategy to prove that the developer programmed the strategy correctly during Step 3.</p>
 
 <p><b>Prices may be unpredictable</b></p>
-<p align="justify">Humans have an innate ability to recognize patterns – even where they don't exist. While this has been a pivotal skill to help us evolve and progress as a species, there are times when relying perceived patterns can result in a negative outcome. Many traders look for patterns in historical prices and trade solely on the faith that the patterns will repeat themselves in the future.</p>
+<p align="justify">Humans have an innate ability to recognize patterns - <i>even where they don't exist</i>. While this has been a pivotal skill to help us evolve and progress as a species, there are times when relying perceived patterns can result in a negative outcome. Many traders look for patterns in historical prices and trade solely on the faith that the patterns will repeat themselves in the future.</p>
+
 <p align="justify">In 1973, Burton Malkiel (who was economics professor at Princeton University) wrote a book about random-walk theory called “A Random Walk Down Wall Street”.  Random walk theory is the concept that stock prices evolve according to a random walk and are therefore unpredictable. In short, it is the basic idea that no one can predict the future prices of stocks.</p>
+
 <p align="justify">Here are several studies show that stock price movement is unpredictable.  The reason prices can be unpredictable is because of the law of supply and demand. As human and robotic traders buy a stock, the price increases. As they sell, the price decreases. Each trader buys or sells for different reasons.</p>
 
 <p>Here are common events that affect stock prices:</p>
@@ -65,7 +61,7 @@
 
 <h1><span style="color:#73a241;"><b>How</b></span></h1>
 <p><b>Random Walk Data</b></p>
-<p align="justify">StepsTeam generates pseudorandom data and tests the trading strategy. A starting price is set for each symbol at the beginning of the simulation. As the simulation progresses through time, a virtual coin is flipped. If the virtual coin lands on heads, the price is increased. If the virtual coin lands on tails, the price is decreased. Also, a virtual die is rolled. <span style="color:#73a241;"><b>What</b></span>ever number comes up (between 1 and 6) is how many cents the price is moved. Finally, the direction and amount of movement is applied to the previous price. This process is repeated over and over for each individual stock in the portfolio. It guarantees that the stock prices move in a very unpredictable way. Studies show that while prices move randomly, there is a subtle upward drift in the price over time.  The reason stock prices increase is because employees at the company work hard to improve the value of the company stock. Another reason is that dividends and profits are often reinvested. As a conservative measure, the pseudorandom data used does not include the upward drift. Trading commissions, SEC fees, and slippage are factored in.</p>
+<p align="justify">StepsTeam generates pseudorandom data and tests the trading strategy. A starting price is set for each symbol at the beginning of the simulation. As the simulation progresses through time, a virtual coin is flipped. If the virtual coin lands on heads, the price is increased. If the virtual coin lands on tails, the price is decreased. Also, a virtual die is rolled. Whatever number comes up (between 1 and 6) is how many cents the price is moved. Finally, the direction and amount of movement is applied to the previous price. This process is repeated over and over for each individual stock in the portfolio. It guarantees that the stock prices move in a very unpredictable way. Studies show that while prices move randomly, there is a subtle upward drift in the price over time.  The reason stock prices increase is because employees at the company work hard to improve the value of the company stock. Another reason is that dividends and profits are often reinvested. As a conservative measure, the pseudorandom data used does not include the upward drift. Trading commissions, SEC fees, and slippage are factored in.</p>
 
 <p><b>Simulated Quote Data</b></p>
 <p>The simulated data has fat tails. </p>
@@ -107,7 +103,15 @@
 
 <!-- Footer -->
 <footer class="w3-container w3-bottom w3-center w3-border-top w3-opacity w3-white w3-xlarge">
-<p class="w3-medium">Copyright 2023</p>
+<div style="text-align: center;">
+<table style="width: 100%;">
+<tr>
+<td style="text-align: left;"><a href="step3.html" style="text-decoration:none;white-space:nowrap"><h3>&lt; back</h3></a></td>
+<td style="text-align: center;"><p class="w3-medium">Copyright 2023</p></td>
+<td style="text-align: right;"><a href="step5.html" style="text-decoration:none;white-space:nowrap"><h3>next &gt;</h3></a></td>
+</tr>
+</table>
+</div>
 </footer>
 </body>
 </html>
