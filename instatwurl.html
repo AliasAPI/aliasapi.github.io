@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Random URL Display</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Random URL Display</h1>
+  <p id="randomURL"></p>
+
+  <script>
+    // Load links from a separate file called links.txt using Fetch API
+    fetch('links.txt')
+      .then(response => response.text())
+      .then(data => {
+        const urlsArray = data.trim().split('\n').map(url => url.trim());
+
+        document.getElementById("randomURL").addEventListener("click", function() {
+          const randomIndex = Math.floor(Math.random() * urlsArray.length);
+          const randomURL = urlsArray[randomIndex];
+          const anchorElement = `<a href="${randomURL}" target="_blank">${randomURL}</a>`;
+          document.getElementById("randomURL").innerHTML = anchorElement;
+          // Optional: Open the link in a new tab immediately
+          window.open(randomURL, "_blank");
+        });
+      })
+      .catch(error => console.error(error));
+  </script>
+</body>
+</html>
