@@ -1,51 +1,173 @@
 <!DOCTYPE HTML>
 <html lang="en">
-<title>ViewDrew</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/font-awesome.min.css">
+<head>
+  <title>ViewDrew</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- W3.CSS Framework -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Custom Modern Minimalist Greyscale Theme -->
+  <style>
+    body {
+      font-family: "Helvetica Neue", sans-serif;
+      background-color: #fafafa;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: #444;
+    }
+    a:hover {
+      color: #000;
+    }
+    h1 {
+      font-size: 28px;
+      margin-top: 10px;
+      color: #222;
+    }
+    h4 {
+      margin-bottom: 0px; /* Reduce spacing below headings */
+    }
+    hr {
+      border: 0;
+      height: 1px;
+      background: #ccc;
+      margin: 16px 0;
+    }
+    .w3-third {
+      padding: 24px 16px;
+    }
+    .icon-link {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0px;
+      line-height: 1.2;
+      color: #555;
+    }
+    .icon-link i {
+      margin-right: 8px;
+      width: 20px;
+      text-align: center;
+      color: #888;
+    }
+    .inline-icons {
+      text-align: left;
+      font-size: 14px;
+      color: #555;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .inline-icons a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #444;
+    }
+    .inline-icons a:hover {
+      color: #000;
+    }
+    .inline-icons i {
+      width: 20px;
+      text-align: center;
+      color: #888;
+    }
+    .contact-line {
+      text-align: left;
+      margin-top: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-size: 14px;
+      color: #555;
+    }
+    .contact-line span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .contact-line i {
+      width: 20px;
+      text-align: center;
+      color: #888;
+    }
+  </style>
+</head>
+
 <body>
 
-<!-- Header Bar -->
-<div class="w3-top">
-<div class="w3-bar w3-white w3-card w3-left">
+<!-- Main Content -->
+<div class="w3-container w3-padding-64">
+  <div class="w3-row-padding">
 
-<a href="index.html" class="w3-left w3-xxlarge" style="text-decoration:none">ViewDrew</a>
+    <!-- Left Column -->
+    <div class="w3-third w3-container" style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+      <img src="photos/2025-07-09_headshot_bw.png" alt="Drew" class="w3-image w3-circle" style="width:200px; height:200px; object-fit:cover; filter:grayscale(100%); border:2px solid #ccc;">
+      <h1>ViewDrew</h1>
+    </div>
 
-<a href="contact.html" 
-   class="w3-bar-item w3-button w3-right w3-large" style="height:50px"><u>Contact</u></a>
+    <!-- Middle Column -->
+    <div class="w3-third w3-container">
+      <ul class="w3-ul w3-text-grey">
+        <hr>
+        <h4 class="w3-text-dark-grey">Company</h4>
+        <p class="icon-link"><i class="fas fa-terminal"></i><a href="https://CodeCartel.Codes" target="_blank">CodeCartel.Codes</a></p>
+        <p class="icon-link"><i class="fas fa-microscope"></i><a href="https://bitbucket.org/AliasAPI/micromanager/src/master/" target="_blank">MicroManager</a></p>
+        <p class="icon-link"><i class="fas fa-shoe-prints"></i><a href="https://StepsTEAM.com" target="_blank">StepsTEAM.com</a></p>
+        <p class="icon-link"><i class="fas fa-utensils"></i><a href="2:5diet/index.html">2:5 Diet</a></p>
+      </ul>
+    </div>
+
+    <!-- Concept Column -->
+    <div class="w3-third w3-container">
+      <hr>
+      <h4 class="w3-text-dark-grey">Concept</h4>
+      <ul class="w3-ul w3-text-grey">
+        <p class="icon-link"><i class="fas fa-candy-cane"></i><a href="https://CaneFreestyle.com/drew" target="_blank">Cane Freestyle</a></p>
+        <p class="icon-link"><i class="fas fa-music"></i><a href="mind/music.html" target="_blank">Music</a></p>
+        <p class="icon-link"><i class="fas fa-person-cane"></i><a href="https://CaneFreestyle.com/drew" target="_blank">coCane</a></p>
+        <p class="icon-link"><i class="fas fa-chalkboard"></i><a href="https://docs.google.com/document/d/14oINJgPcyX0hBSe-zxC6NDHyxt3DQuRegLDcO7vT3AU" target="_blank">Whiteboard</a></p>
+      </ul>
+    </div>
+
+    <!-- Composure Column -->
+    <div class="w3-third w3-container">
+      <hr>
+      <h4 class="w3-text-dark-grey">Composure</h4>
+      <table width="100%">
+        <tr>
+          <td><p class="icon-link"><i class="fas fa-user-ninja"></i><a href="mind/entp.html" target="_blank">ENTP</a></p></td>
+          <td><p class="icon-link"><i class="fas fa-brain"></i><a href="mind/adhd.html" target="_blank">ADHD</a></p></td>
+          <td><p class="icon-link"><i class="fas fa-user-astronaut"></i><a href="mind/5wing6.html" target="_blank">5w6</a></p></td>
+          <td><p class="icon-link"><i class="fas fa-user-tie"></i><a href="mind/i-d.html" target="_blank">I-D</a></p></td>
+        </tr>
+      </table>
+      <p class="icon-link"><i class="fas fa-image"></i><a href="photos.html">Photos</a></p>
+    </div>
+
+    <!-- Connect Column -->
+    <div class="w3-third w3-container">
+      <hr>
+      <h4 class="w3-text-dark-grey">Connect</h4>
+      <table width="100%">
+        <tr>
+          <td><p class="icon-link"><a href="https://www.linkedin.com/in/drewbrownjr" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></p></td>
+          <td><p class="icon-link"><a href="https://www.facebook.com/canefreestyle" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></p></td>
+          <td><p class="icon-link"><a href="https://www.instagram.com/canefreestyle" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></p></td>
+        </tr>
+        <tr>
+          <td><p class="icon-link"><a href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ0RISBOqhCEYbdOIxRYH7ZXfcyvIElLKm8IAJbd0W3X69mWTMb6naJFlvnlmENXkAeBRijPDNOX" target="_blank"><i class="fab fa-google"></i> Schedule a Call</a></p></td>
+          <td><p class="icon-link"><a href="https://meet.google.com/vgk-gpzr-axd" target="_blank"><i class="fab fa-google"></i> GoogleMeet</a></p></td>
+          <td><p class="icon-link"><i class="fas fa-phone"></i> 404.981.1904</p></td>
+        </tr>
+      </table>
+      <span><p class="icon-link"><i class="fas fa-envelope"></i> ViewDrew.com@gmail.com</p></span>
+    </div>
+
+  </div>
 </div>
-</div>
 
-
-
-<!-- The Main Body -->
-<div class="w3-container w3-content w3-padding-64" style="margin-top:75px">
-
-<a href="https://CaneFreestyle.com/drew" target=_blank>Cane Freestyle</a><br><br>
-
-<a href="psychology/i-d.html">I-D</a><br><br>
-
-<a href="photos.html">photos</a><br><br>
-
-<a href="https://bitbucket.org/AliasAPI/micromanager/src/master/" target=_blank>MicroManager</a><br><br>
-
-<a href="2:5diet/index.html">2:5 Diet</a><br><br>
-
-<a href="https://www.facebook.com/canefreestyle" target=_blank>Facebook</a><br><br>
-
-<a href="https://www.linkedin.com/in/drewbrownjr" target=_blank>Linkedin</a><br><br>
-
-<a href="https://StepsTEAM.com" target=_blank>StepsTEAM</a><br><br>
-
-<a href="https://docs.google.com/document/d/14oINJgPcyX0hBSe-zxC6NDHyxt3DQuRegLDcO7vT3AU" target=_blank>Whiteboard</a>
-
-</div>
-
-<!-- Footer -->
-<footer class="w3-container w3-bottom w3-center w3-border-top w3-opacity w3-white w3-xlarge">
-<p class="w3-medium">&#169; 2025</p>
-</footer>
 </body>
 </html>
