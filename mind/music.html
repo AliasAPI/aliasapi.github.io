@@ -52,27 +52,41 @@
     .icon-heading i {
       color: #555;
     }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-    th, td {
-      vertical-align: top;
-      padding: 10px;
-      text-align: left;
-      width: 50%;
-    }
     @media (max-width: 768px) {
       .container {
         max-width: 95%;
         padding: 0 1rem;
-      }
-      td {
-        display: block;
-        width: 100%;
-      }
     }
-  </style>
+    /* Container for horizontal scrolling */
+    .table-container {
+        width: 100%; /* Take full width of parent */
+        overflow-x: auto; /* Enable horizontal scrolling if content overflows */
+        border-radius: 10px; /* Rounded corners for the container */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        background-color: #fff; /* Background for the container */
+        padding: 10px; /* Padding inside the container */
+    }
+    table {
+        width: 100%; /* Table takes 100% of its container */
+        table-layout: fixed; /* Ensures columns have fixed width */
+        border-collapse: collapse;
+        background: #f6f6f6;
+        min-width: 450px; /* Set a minimum width for the table to prevent columns from becoming too narrow */
+        /* This value (450px) is an estimate for 7 columns to be readable.
+            Adjust as needed based on content width. */
+    }
+    table td {
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd; /* Add borders for better visibility */
+        white-space: nowrap; /* Prevent text from wrapping inside cells */
+    }
+    .header-row {
+        background-color: #cccccc; /* Grey background for the header row */
+        font-weight: bold; /* Make header text bold */
+    }
+  }
+</style>
 </head>
 <body>
   <div class="w3-container w3-padding-24 container w3-center">
@@ -158,6 +172,7 @@
 
 <table style="width:100%; table-layout:fixed; border-collapse:collapse; background:#f6f6f6;">
   <tr class="header-row" style="background-color: #cccccc;">
+
     <td>1</td><td>3</td><td>5</td><td>7</td><td>9</td><td>11</td><td>13</td>
   </tr>
   <tr>
